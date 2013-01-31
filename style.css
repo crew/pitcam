@@ -8,8 +8,17 @@ h1 {
   text-align: center;
 }
 
-img {
-  display: block;
+.pitcam {
   width: 640px;
   margin: 0 auto;
+}
+
+.pitcam {
+  width: 640px;
+}
+
+.bar {
+  height: 3px;
+  width: 1%;
+  background-color: #ffa638;
 }
