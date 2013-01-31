@@ -3,31 +3,17 @@
 <head>
   <title>the pitcam!</title>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  <script type="text/javascript">
-$(document).ready(function() {
-  function get_url() {
-    return "http://alpha.ccs.neu.edu/pitcam.jpeg?" + new Date().getTime();
-  }
-  var img = new Image();
-  img.src = get_url();
-  function updateImage() {
-    if (img.complete) {
-      $('#img').attr("src", img.src);
-      img = new Image();
-      img.src = get_url();
-    }
-    setTimeout(updateImage, 5000);
-  }
-  updateImage();
-});
-  </script>
-  <style type="text/css">
-    h1 { text-align:center; }
-    #imgholder {width:640px; height:480px; margin:0 auto;}
-  </style>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="https://raw.github.com/necolas/normalize.css/master/normalize.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>the pitcam</h1>
-<div id="imgholder"><img id="img" src="http://alpha.ccs.neu.edu/pitcam.jpeg" /></div>
+
+  <h1>the pitcam</h1>
+  <div class="pitcam">
+    <div class="bar"></div>
+    <img src="http://alpha.ccs.neu.edu/pitcam.jpeg"/>
+  </div>
+
 </body>
 </html>
