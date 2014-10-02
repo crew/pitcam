@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-  var imgUpdateInterval = 5.0;
+  var imgUpdateInterval = 1.0;
   var barUpdateInterval = 1/30;
 
   // in seconds
   var count = 0.0;
 
   function updateImage() {
-    $('.pitcam img').attr('src', "http://alpha.ccs.neu.edu/pitcam.jpeg");
+    $('.pitcam img').attr('src', "http://pitcam.ccs.neu.edu/pitcam.jpeg?ver=" + new Date().getTime());
     count = 0.0; // reset the progress so time starts over.
   }
 
