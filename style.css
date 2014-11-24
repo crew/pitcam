@@ -4,6 +4,20 @@ body {
   font-family: sans-serif;
 }
 
+.full {
+  min-height: 100%;
+  background: #000;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+}
+.full-image {
+  background-position: center;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  min-height:100%;
+}
 h1 {
   text-align: center;
 }
@@ -12,7 +26,9 @@ h1 {
   width: 640px;
   margin: 0 auto;
 }
-
+.full .pitcam {
+  width:100%;
+}
 .bar {
   height: 3px;
   width: 1%;
